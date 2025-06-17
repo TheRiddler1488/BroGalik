@@ -502,6 +502,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &684536276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 845948661838658850, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
+  m_PrefabInstance: {fileID: 1237891450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807261195
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +750,7 @@ MonoBehaviour:
   player: {fileID: 1301241276}
   attackBehaviours: []
   currentRound: 1
-  waveTimer: 2
+  waveTimer: 20
   playerHP: 100
   souls: 0
   selectedCharacter:
@@ -773,11 +778,11 @@ MonoBehaviour:
   experiencePerKill: 10
   maxLevel: 30
   expToNextLevel: 0a000000140000001e0000002800000050000000c8000000
-  soulsPerKill: 100
-  levelForTierC: 20
-  levelForTierB: 50
-  levelForTierA: 3
-  levelForTierS: 4
+  soulsPerKill: 10
+  levelForTierC: 5
+  levelForTierB: 10
+  levelForTierA: 15
+  levelForTierS: 20
   shopUnlockRound: 2
 --- !u!4 &897422907
 Transform:
@@ -1503,7 +1508,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 845948661838658850, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301241286}
+    - targetCorrespondingSourceObject: {fileID: 845948661838658850, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301241285}
   m_SourcePrefab: {fileID: 100100000, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
 --- !u!1 &1255936747
 GameObject:
@@ -1609,7 +1620,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4396211766280713435, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
   m_PrefabInstance: {fileID: 1237891450}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 684536276}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c928bf912a22da499266505762df488, type: 3}
@@ -1620,6 +1631,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3425951438210612944, guid: aa0f2626cfe1570498861289b5b76b26, type: 3}
   m_PrefabInstance: {fileID: 1237891450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301241285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684536276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb5c887a09d65c4fa6b9d15b6bf0146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackData: {fileID: 11400000, guid: 2498f34365b0c4040915bf9ac385ea43, type: 2}
+  attackEffectPool: {fileID: 1448802350}
+--- !u!114 &1301241286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684536276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb5c887a09d65c4fa6b9d15b6bf0146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackData: {fileID: 11400000, guid: caa0592c9f1e0504abe60995488c86d8, type: 2}
+  attackEffectPool: {fileID: 1262878734}
 --- !u!1 &1448802349
 GameObject:
   m_ObjectHideFlags: 0
