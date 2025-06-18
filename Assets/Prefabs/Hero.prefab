@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7402237773815022768}
   - component: {fileID: 2214685004310429807}
   - component: {fileID: 4396211766280713435}
-  - component: {fileID: 3842771017418178278}
+  - component: {fileID: 2922556506788235376}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -33,8 +33,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 192056559063291342}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2043283459620796671
@@ -131,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotationSpeed: 10
---- !u!114 &3842771017418178278
+--- !u!114 &2922556506788235376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,49 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb5c887a09d65c4fa6b9d15b6bf0146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackData: {fileID: 11400000, guid: ecbc37b1f272ea64da23b62ed68b2e5e, type: 2}
   attackEffectPool: {fileID: 0}
---- !u!1 &5903220006205562043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 192056559063291342}
-  - component: {fileID: 8143862847981859779}
-  m_Layer: 0
-  m_Name: AttackSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &192056559063291342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5903220006205562043}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3425951438210612944}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8143862847981859779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5903220006205562043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c54d825724342a42964ce4218014604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

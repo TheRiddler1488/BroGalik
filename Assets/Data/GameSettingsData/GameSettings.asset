@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d51d533c9888643953b619db500b73, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  experiencePerKill: 2
+  maxLevel: 5
+  expToNextLevel: 0a000000140000001e0000002800000050000000
+  soulsPerKill: 5
+  startingSouls: 50
+  shopUnlockRound: 1
+  shopRefreshCost: 5
+  shopOptionCost: 15
+  shopInterval: 3
+  levelForTierC: 1
+  levelForTierB: 2
+  levelForTierA: 3
+  levelForTierS: 4
+  waveTimer: 10
+  baseEnemiesPerWave: 10
+  baseWaveInterval: 0.3
+  baseSpawnDelay: 0.2
+  maxEnemiesPerWave: 20
+  minWaveInterval: 5
+  minSpawnDelay: 0.05
